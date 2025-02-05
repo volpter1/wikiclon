@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+/* .body{
+    display: flex;
+} */
+.mainpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    /* position: absolute; */
+    /* align-items: start; */
+    padding-top: 7px;
+    padding-left: 18px;
+    padding-right: 38px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    align-items: center;
+    padding-top: 1rem;
+    height: 64px;
+    /* width: auto; */
+}
+.firstpart{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* margin-left: -25px; */
+}
+.wikiname{
+    display: flex;
+    flex-direction: column;
+}
+.secondpart{
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+    /* padding-right: 200px; */
+
+}
+.searchbar{
+    /* position: absolute; */
+    /* margin-left: 8px; */
+    /* background-image: url(magnifyglass.jpg); */
+    /* background-size: 25px 20px; */
+    /* background-repeat: no-repeat; */
+    /* margin-left: 30px; */
+}
+.submit{
+    width: 75px;
+    border: 2px solid black;
+    margin-right: 50px;
+}.thirdpart{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    /* margin-left: 30px; */
+    gap: 45px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.navl a{
+    /* float: left; */
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    /* padding-left: 16px; */
+}
+.maincontent{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+.leftbar{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 85;
+    left: 0;
+    width: 197px;
+    margin-left: 70px;
+    margin-top: 80px;
+}
+.firstline{
+    display: flex;
+    justify-content: start; 
+}
+.lowerpart{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 20px;
+}
+.nav2{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    /* margin-left: 30px; */
+    gap: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.navl2 a{
+    /* float: left; */
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    /* padding-left: 16px; */
+}
+.centercontent{
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    width: 1043px;
+    height: 38.4px;
+    margin-left: 167px;
+    margin-top: 40px;
+}
+.Head{
+    
+}
+.rightend{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.preheading{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 1043px;
+    margin-left: 167px;
+    margin-top: 5px;
+    /* gap: 15px; */
+}
+.prebar{
+    width: 1043px;
+    display: flex;
+    justify-content: space-between;
+}
+.rightpreend{
+    display: flex;
+    gap: 5px;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 1043px;
+    /* height: 38.4px; */
+    margin-left: 167px;
+    /* margin-top: 40px; */
+}
+.fromwiki{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.format{
+    display: flex;
+    /* justify-content: start; */
+}
+.starttext{
+    display: flex;
+    flex-direction: column;
+}
+.Text{
+    display: flex;
+    flex-direction: column;
+    width: 718.8px;
+}
+.foralignment{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+}
+.pics{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 120px;
+    position: absolute;
+    padding-left: 750px;
+}
+.img1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 718.8px;
+
+}
+.descr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 718.8px;
+}
+.ISR{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 718.8px;
+}
+.Court{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 718.8px;
+}
+.Evo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 718.8px;
+}
+    </style>
+    <link rel="stylesheet" href="back.css">
+</head>
+<body>
+    <div class="mainpage">
+        <div class="navbar">
+            <div class="firstpart">
+                <div class="threeline">
+                    <img src="https://th.bing.com/th/id/OIP.I8PWToetYB5a2iDElq9o6wHaDt?rs=1&pid=ImgDetMain" width="94px" height="64px">
+                </div>
+                <div class="wikilogo">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" width="64px" height="64px">
+                </div>
+                <div class="wikiname">
+                    <img src="https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en.svg" height="25px">
+                    <p class="tagline">The free Encyclopedia</p>
+                </div>
+            </div>
+            <div class="secondpart">
+                   
+                <input type="text" placeholder="Search Wikipedia" style="padding-left: 32px; width: 500px; height: 34px;" class="searchbar">
+                <button class="submit">Submit</button> 
+               
+            </div>
+            <div class="thirdpart">
+                <ul class="nav">
+                    <li class="navl"><a href ="CA">Create account</a></li>
+                    <li class="navl"><a href ="Li">Log in</a></li>
+                    <li class="navl"><img src="https://www.iconbolt.com/preview/facebook/bootstrap-icons/three-dots-vertical.svg" height="20.8px" width="41px"></li>
+                </ul>
+            </div> 
+        </div>
+        <div class="maincontent">
+            <div class="leftbar">
+                <div class="firstline">
+                    <h1 style="height: 19px; width: 61px; font-family: 'Times New Roman', Times, serif; font-size: 16px;">Contents</h1>
+                    <button style="margin-left: 20px;">hide</button>
+                </div>
+                <hr style="margin-top: 20px;">
+
+                <div class="lowerpart">
+                    <h1 style="height: 19px; width: 61px; font-family: 'Times New Roman', Times, serif; font-size: 16px;margin-bottom: 20px;">(Top)</h1>
+                    <ul class="nav2">
+                        <li class="navl2" style="white-space: nowrap;">
+                            <p class="grater-symbol grater-symbol1 rotate-transition">&gt;</p>
+                            <a href ="CA">Description</a>
+                        </li>
+                        <li class="navl2"><a href ="Li">Behaviour</a></li>
+                        <li class="navl2"><a href ="CA">Diet</a></li>
+                        <li class="navl2" style="white-space: nowrap;">
+                            <p class="grater-symbol grater-symbol1 rotate-transition">&gt;</p>
+                            <a href ="Li">Cultural Significance</a>                            
+                        </li>
+                        <li class="navl2"><a href ="CA">Breeding and color variation</a></li>
+                        <li class="navl2"><a href ="Li">Gastronomy</a></li>
+                        <li class="navl2"><a href ="Li">References</a></li>
+                        <li class="navl2"><a href ="Li">General sources</a></li>
+                        <li class="navl2"><a href ="Li">External links</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="centercontent">
+                <div class="heading">
+                    <div class="Head">
+                        <p class="mainhead" style="font-family:'Times New Roman', Times, serif; font-size: 32px;">Peafowl</p>
+                    </div>
+                    <div class="rightend">
+                        <img src="https://678cf74f1da0894439e11e2a--cozy-seahorse-6a1c83.netlify.app/language-outline.svg" width="16px" height="16px">
+                        <p style="color: dodgerblue; font-weight: 600;">64 language</p>
+                        <img src="down.png" width="16px" height="12.4px">
+                    </div>
+                </div> 
+                <hr style=" margin-left: 167px; margin-bottom: 7px;">   
+                <div class="preheading">
+                    <div class="prebar">
+                        <div class="first">
+                            <ul>
+                                <a href="/">Article</a>
+                                <a href="/">Talk</a>
+                            </ul>
+                        </div>
+                        <div class="second">
+                            <ul class="rightpreend">
+                                <a href="/">Read</a>
+                                <a href="/">Edit</a>
+                                <a href="/">View History</a>
+                                <a href="/">Tools</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr style="margin-top:8px ; margin-left: 167px;">
+                <div class="maintext">
+                    <div class="fromwiki">
+                        <div class="format">
+                            <div class="foralignment">
+                                <div class="starttext">
+                                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">From Wikipedia, the free encyclopedia</p>
+                                    <br>
+                                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">(Redirected from Peacock)</p>
+                                    <br>
+                                    <pre>    "Peacock" redirects here. For service, see <span style="color: dodgerblue;">Peacock  (streaming service).</span> For other see <span style="color: dodgerblue; ">Peacock (disambiguation).</span></pre>
+                                    <br>
+                                </div>    
+                                <div class="Text">
+                                    <div class="intro">
+                                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">Peafowl is a common name for two bird species in the genera Pavo and Afropavo within the tribe Pavonini of the family Phasianidae (the pheasants and their allies). Male peafowl are referred to as peacocks, and female peafowl are referred to as peahens, although peafowl of either sex are often referred to colloquially as "peacocks".</p>
+                                        <br>
+                                        <br>
+                                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">The two Asiatic species are the blue or Indian peafowl originally from the Indian subcontinent, and the green peafowl from Southeast Asia; The Congo peafowl is not a true peafowl, native only to the Congo Basin. Male peafowl are known for their piercing calls and their extravagant plumage. The latter is especially prominent in the Asiatic species, which have an eye-spotted "tail" or "train" of covert feathers, which they display as part of a courtship ritual.</p>
+                                        <br>
+                                        <br>
+                                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">The functions of the elaborate iridescent colouration and large "train" of peacocks have been the subject of extensive scientific debate. Charles Darwin suggested that they served to attract females, and the showy features of the males had evolved by sexual selection. More recently, Amotz Zahavi proposed in his handicap principle that these features acted as honest signals of the males' fitness, since less-fit males would be disadvantaged by the difficulty of surviving with such large and conspicuous structures.</p>
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <div class="descr">
+                                        <h3 style="font-family: 'Times New Roman', Times, serif; font-size: 18.72px; padding: 0px 0px 3px;">Description</h3>
+                                        <hr style="width: 718.8px;">
+                                        <br>
+                                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">The Indian peacock (Pavo cristatus) has iridescent blue and green plumage, mostly metal-like blue and green. In both species, females are a little smaller than males in terms of weight and wingspan, but males are significantly longer due to the "tail", also known as a "train".[2] The peacock train consists not of tail quill feathers, but highly elongated upper tail coverts. These feathers are marked with eyespots, best seen when a peacock fans his tail. All species have a crest atop the head. The Indian peahen has a mixture of dull grey, brown, and green in her plumage. The female also displays her plumage to ward off female competition or signal danger to her young.</p>
+                                        <br>
+                                        <br>
+                                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">Male green peafowl (Pavo muticus) have green and bronze or gold plumage, and black wings with a sheen of blue. Unlike Indian peafowl, the green peahen is similar to the male, but has shorter upper tail coverts, a more coppery neck, and overall less iridescence. Both males and females have spurs.[3]</p>
+                                        <br>
+                                        <br>
+                                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">The Congo peacock (Afropavo congensis) male does not display his covert feathers, but uses his actual tail feathers during courtship displays. These feathers are much shorter than those of the Indian and green species, and the ocelli are much less pronounced. Females of the Indian and African species are dull grey and/or brown. Chicks of both sexes in all the species are cryptically coloured. They vary between yellow and tawny, usually with patches of darker brown or light tan and "dirty white" ivory. Mature peahens have been recorded as suddenly growing typically male peacock plumage and making male calls.[4] Research has suggested that changes in mature birds are due to a lack of estrogen from old or damaged ovaries, and that male plumage and calls are the default unless hormonally suppressed.[5]</p>
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <div class="ISR">
+                                        <h3 style="font-family: 'Times New Roman', Times, serif; font-size: 18.72px; padding: 0px 0px 3px;">Iridescence and structural colouration</h3>
+                                        <hr style=" width: 718.8px;">
+                                        <br>
+                                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">As with many birds, vibrant iridescent plumage colours are not primarily pigments, but structural colouration. Optical interference Bragg reflections, based on regular, periodic nanostructures of the barbules (fiber-like components) of the feathers, produce the peacock's colours. 2D photonic-crystal structures within the layers of the barbules cause the colouration of their feathers.[6] Slight changes to the spacing of the barbules result in different colours. Brown feathers are a mixture of red and blue: one colour is created by the periodic structure and the other is created by a Fabry–Pérot interference peak from reflections from the outer and inner boundaries. Color derived from physical structure rather than pigment can vary with viewing angle, causing iridescence.[7]</p>
+                                        <br>
+                                    </div>
+                                    <div class="Court">
+                                        <h3 style="font-family: 'Times New Roman', Times, serif; font-size: 18.72px; padding: 0px 0px 3px;">Courtship</h3>
+                                        <hr style=" width: 718.8px;">
+                                        <br>
+                                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">Most commonly, during a courtship display, the visiting female peahen will stop directly in front of the male peacock – thus providing her the ability to assess the male at 90° to the surface of the feather. Then, the male will turn and display his feathers about 45° to the right of the sun's azimuth which allows the sunlight to accentuate the iridescence of his train. If the female chooses to interact with the male, he will then turn to face her and shiver his train so as to begin the mating process.[8]</p>
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <div class="Evo">
+                                        <h3 style="font-family: 'Times New Roman', Times, serif; font-size: 18.72px; padding: 0px 0px 3px;">Evolution</h3>
+                                        <hr style=" width: 718.8px;">
+                                        <br>
+                                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">Sexual selection Charles Darwin suggested in The Descent of Man and Selection in Relation to Sex that peafowl plumage may have evolved through sexual selection: Many female progenitors of the peacock must, during a long line of descent, have appreciated this superiority; for they have unconsciously, by the continued preference for the most beautiful males, rendered the peacock the most splendid of living birds. Aposematism and natural selection It has been suggested that a peacock's train, loud call, and fearless behaviour have been formed by natural selection (with or without sexual selection too), and served as an aposematic display to intimidate predators and rivals.[9][10] This hypothesis is designed to explain Takahashi's observations that in Japan, neither reproductive success nor physical condition correlates with the train's length, symmetry or number of eyespots.[11]</p>
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <div class="Court">
+                                        <h3 style="font-family: 'Times New Roman', Times, serif; font-size: 18.72px; padding: 0px 0px 3px;">Courtship</h3>
+                                        <hr style=" width: 718.8px;">
+                                        <br>
+                                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">Most commonly, during a courtship display, the visiting female peahen will stop directly in front of the male peacock – thus providing her the ability to assess the male at 90° to the surface of the feather. Then, the male will turn and display his feathers about 45° to the right of the sun's azimuth which allows the sunlight to accentuate the iridescence of his train. If the female chooses to interact with the male, he will then turn to face her and shiver his train so as to begin the mating process.[8]</p>
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <div class="Evo">
+                                        <h3 style="font-family: 'Times New Roman', Times, serif; font-size: 18.72px; padding: 0px 0px 3px;">Evolution</h3>
+                                        <hr style=" width: 718.8px;">
+                                        <br>
+                                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">Sexual selection Charles Darwin suggested in The Descent of Man and Selection in Relation to Sex that peafowl plumage may have evolved through sexual selection: Many female progenitors of the peacock must, during a long line of descent, have appreciated this superiority; for they have unconsciously, by the continued preference for the most beautiful males, rendered the peacock the most splendid of living birds. Aposematism and natural selection It has been suggested that a peacock's train, loud call, and fearless behaviour have been formed by natural selection (with or without sexual selection too), and served as an aposematic display to intimidate predators and rivals.[9][10] This hypothesis is designed to explain Takahashi's observations that in Japan, neither reproductive success nor physical condition correlates with the train's length, symmetry or number of eyespots.[11]</p>
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <div class="ISR">
+                                        <h3 style="font-family: 'Times New Roman', Times, serif; font-size: 18.72px; padding: 0px 0px 3px;">Iridescence and structural colouration</h3>
+                                        <hr style=" width: 718.8px;">
+                                        <br>
+                                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">As with many birds, vibrant iridescent plumage colours are not primarily pigments, but structural colouration. Optical interference Bragg reflections, based on regular, periodic nanostructures of the barbules (fiber-like components) of the feathers, produce the peacock's colours. 2D photonic-crystal structures within the layers of the barbules cause the colouration of their feathers.[6] Slight changes to the spacing of the barbules result in different colours. Brown feathers are a mixture of red and blue: one colour is created by the periodic structure and the other is created by a Fabry–Pérot interference peak from reflections from the outer and inner boundaries. Color derived from physical structure rather than pigment can vary with viewing angle, causing iridescence.[7]</p>
+                                        <br>
+                                        <br>
+                                    </div>  
+                                </div>    
+                            </div>
+                            <div class="pics">
+                                <div class="img1" style="background-color: rgb(248, 248, 248); border: 1px solid rgb(167, 167, 167); width:270.7px; height:160px;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Peacock_Plumage.jpg/330px-Peacock_Plumage.jpg" width="270.7px" height="160px">
+                                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">Indian peacock displaying his train</p>
+                                </div>
+                                <div class="img1" style="background-color: rgb(248, 248, 248); border: 1px solid rgb(167, 167, 167); width:270.7px; height:160px; padding-bottom: 35px;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/The_Magnificent_Peafowl.jpg" width="270.7px" height="160px">
+                                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">A peacock spreading his tail, displaying his plumage</p>
+                                </div>
+                                <div class="img1" style="background-color: rgb(248, 248, 248); border: 1px solid rgb(167, 167, 167); width:270.7px; height:160px;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Female_Pefowl_001.jpg/330px-Female_Pefowl_001.jpg" width="270.7px" height="160px">
+                                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">Peahen</p>
+                                </div>
+                                <div class="img1" style="background-color: rgb(248, 248, 248); border: 1px solid rgb(167, 167, 167); width:270.7px; height:160px;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Eggs_of_Peafowl_at_Aravath_Kasaragod.jpg/330px-Eggs_of_Peafowl_at_Aravath_Kasaragod.jpg" width="270.7px" height="160px">
+                                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">Peafowl eggs</p>
+                                </div>
+                                <div class="img1" style="background-color: rgb(248, 248, 248); border: 1px solid rgb(167, 167, 167); width:270.7px; height:160px;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Baby_Peacock_%2818131813108%29.jpg/330px-Baby_Peacock_%2818131813108%29.jpg" width="270.7px" height="160px">
+                                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">Peachick</p>
+                                </div>
+                                <div class="img1" style="background-color: rgb(248, 248, 248); border: 1px solid rgb(167, 167, 167); width:270.7px; height:160px;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Peacock-JS.jpg/330px-Peacock-JS.jpg" width="270.7px" height="160px">
+                                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">Head of adult peacock</p>
+                                </div>
+                                <div class="img1" style="background-color: rgb(248, 248, 248); border: 1px solid rgb(167, 167, 167); width:270.7px; height:160px; padding-bottom: 50px;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Peahen_at_the_zoo.jpg/330px-Peahen_at_the_zoo.jpg" width="270.7px" height="160px">
+                                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">A female peafowl, or peahen, walking freely around a zoo</p>
+                                </div>
+                                <div class="img1" style="background-color: rgb(248, 248, 248); border: 1px solid rgb(167, 167, 167); width:270.7px; height:160px;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Peahen_in_front_of_displaying_peacock.jpg/330px-Peahen_in_front_of_displaying_peacock.jpg" width="270.7px" height="160px">
+                                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">Indian peacock displaying his train</p>
+                                </div>
+                                
+                            </div>
+                        </div>                                        
+                    </div>    
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
